@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Development | About us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Add your custom styles for the icons and language switching */
+        .language {
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+        }
+        
+        .lang-icon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            margin-left: 10px;
+            border-radius: 50%;  /* Rounds the corners to create a circle */
+        }
+
+        /* Optional: Style the language flags */
+        .lang-icon:hover {
+            opacity: 0.8;
+        }
+
+        /* Optionally, hide all content except the selected language */
+        .hidden {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .language {
+                position: absolute;
+                right: 60px;
+                top: 105px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <h1>Dynamic Development</h1>
+                <h1>Group</h1>
+            </a>
+            <div class="call-label">
+                <p class="english">Call Us : +30 698 691 4480</p>
+                <p class="greek hidden">Καλέστε μας : +30 698 691 4480</p>
+            </div>
+        </div>
+
+        <!-- Language Selector Section -->
+        <div class="language">
+            <img src="gr.png" alt="Greek Language" class="lang-icon" id="greek">
+            <img src="eng.png" alt="English Language" class="lang-icon" id="english">
+        </div>
+
+        <!-- Navbar Section -->
+        <div class="navbar-container">
+            <nav>
+                <ul id="NavItems">
+                    <li><a href="index.html" class="english">Home</a><a href="index.html" class="greek hidden">Αρχική</a></li>
+                    <li><a href="newProd.html" class="english">New Products</a><a href="newProd.html" class="greek hidden">Νέα Προϊόντα</a></li>
+                    <li><a href="about.html" class="english">About us</a><a href="about.html" class="greek hidden">Σχετικά με εμάς</a></li>
+                    <li><a href="contact.html" class="english">Contacts</a><a href="contact.html" class="greek hidden">Επικοινωνία</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="about text">
+            <p class="english">
+                At Dynamic Development, we are a trusted global company in the chemical trading industry, dedicated to delivering high-quality chemical products and tailored trading solutions to businesses worldwide. With many years of expertise, we have cultivated a strong network that spans multiple continents, ensuring that our customers have reliable access to a wide range of chemicals, from raw materials to specialty products.
+                We specialize in offering chemical solutions for various industries, including manufacturing, agriculture, pharmaceuticals, and more. Our commitment to excellence ensures that we meet the specific needs of our clients, providing not only high-quality chemical products but also logistics, sourcing, and other critical services that support their operations.
+                Looking to the future, Dynamic Development is focused on expanding its portfolio and reaching new markets. As demand for sustainable and innovative chemical solutions grows, we are committed to diversifying our offerings and embracing new technologies to stay at the forefront of the industry. We aim to continue building long-term partnerships with our clients, contributing to their success through reliable, efficient, and sustainable trading solutions.
+                At Dynamic Development, we don’t just trade chemicals ... We build relationships that drive growth, sustainability, and innovation for industries across the globe.
+            </p>
+
+            <p class="greek hidden">
+                Στη Dynamic Development, είμαστε μια αξιόπιστη παγκόσμια εταιρεία στον κλάδο του εμπορίου χημικών, αφοσιωμένοι στην παράδοση προϊόντων χημικών υψηλής ποιότητας και εξατομικευμένων εμπορικών λύσεων σε επιχειρήσεις παγκοσμίως. Με πολλά χρόνια εμπειρίας, έχουμε καλλιεργήσει ένα ισχυρό δίκτυο που εκτείνεται σε πολλές ηπείρους, εξασφαλίζοντας ότι οι πελάτες μας έχουν αξιόπιστη πρόσβαση σε μια ευρεία γκάμα χημικών, από πρώτες ύλες έως ειδικά προϊόντα.
+                Ειδικευόμαστε στην προσφορά χημικών λύσεων για διάφορους κλάδους, όπως η παραγωγή, η γεωργία, η φαρμακευτική και άλλοι. Η δέσμευσή μας στην αριστεία εξασφαλίζει ότι καλύπτουμε τις συγκεκριμένες ανάγκες των πελατών μας, παρέχοντας όχι μόνο προϊόντα χημικών υψηλής ποιότητας, αλλά και υπηρεσίες logistics, προμήθειας και άλλες κρίσιμες υπηρεσίες που υποστηρίζουν τις λειτουργίες τους.
+                Κοιτώντας το μέλλον, η Dynamic Development επικεντρώνεται στην επέκταση του χαρτοφυλακίου της και στην επίτευξη νέων αγορών. Καθώς η ζήτηση για βιώσιμες και καινοτόμες χημικές λύσεις αυξάνεται, δεσμευόμαστε να διαφοροποιήσουμε τις προσφορές μας και να υιοθετήσουμε νέες τεχνολογίες για να παραμείνουμε στην αιχμή της βιομηχανίας. Στόχος μας είναι να συνεχίσουμε την ανάπτυξη μακροχρόνιων συνεργασιών με τους πελάτες μας, συμβάλλοντας στην επιτυχία τους μέσω αξιόπιστων, αποδοτικών και βιώσιμων εμπορικών λύσεων.
+                Στη Dynamic Development, δεν εμπορευόμαστε μόνο χημικά ... Δημιουργούμε σχέσεις που προάγουν την ανάπτυξη, τη βιωσιμότητα και την καινοτομία για τις βιομηχανίες σε όλο τον κόσμο.
+            </p>
+        </div>
+            
+    </div>
+
+    <!-- Footer Section -->
+    <div class="top-footer">
+        <div class="top-footer-text">
+            <div class="footer-section pages">
+                <h3 class="english">Pages</h3>
+                <h3 class="greek hidden">Σελίδες</h3>
+                <ul>
+                    <li><a href="#home" class="english">Home</a><a href="#home" class="greek hidden">Αρχική</a></li>
+                    <li><a href="#about" class="english">About</a><a href="#about" class="greek hidden">Σχετικά</a></li>
+                    <li><a href="#services" class="english">Services</a><a href="#services" class="greek hidden">Υπηρεσίες</a></li>
+                    <li><a href="#contact" class="english">Contact</a><a href="#contact" class="greek hidden">Επικοινωνία</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contacts">
+                <h3 class="english">Contacts</h3>
+                <h3 class="greek hidden">Επαφές</h3>
+                <ul>
+                    <li class="english">Phone: +30 698 691 4480</li>
+                    <li class="greek hidden">Τηλέφωνο: +30 698 691 4480</li>
+                    <li class="english">Location: Kato Archanes , Greece</li>
+                    <li class="greek hidden">Τοποθεσία: Κάτω Αρχάνες, Ελλάδα</li>
+                    <li class="english">Postal Code: 70100</li>
+                    <li class="greek hidden">Τ.Κ: 70100</li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-links">
+                <h3 class="english">Social Links</h3>
+                <h3 class="greek hidden">Κοινωνικά Δίκτυα</h3>
+                <ul>
+                    <li class="english"><a href="dynamicdevg@gmail.com">Email: dynamicdevg@gmail.com</a></li>
+                    <li class="greek hidden"><a href="dynamicdevg@gmail.com">Ηλεκτρονικό Ταχυδρομείο: dynamicdevg@gmail.com</a></li>
+                    
+                    <li class="english"><a href="https://www.facebook.com/profile.php?id=61571619327231">Facebook</a></li>
+                    <li class="greek hidden"><a href="https://www.facebook.com/profile.php?id=61571619327231">Facebook</a></li>
+            
+                    <li class="english"><a href="index.html" target="_blank">Official Website</a></li>
+                    <li class="greek hidden"><a href="index.html" target="_blank">Επίσημος Ιστότοπος</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bottom-footer">
+        <p class="english">Chemical Trade and Supply Plc (c) 2024 - Providing Premium Chemical Products Worldwide</p>
+        <p class="greek hidden">Χημικό Εμπόριο και Προμήθεια Ανώνυμος Εταιρεία (c) 2024 - Παροχή Ποιότητας Χημικών Προϊόντων Παγκοσμίως</p>
+    </div>
+
+    <script>
+        // JavaScript to switch between English and Greek
+        document.getElementById("greek").addEventListener("click", function() {
+            // Show Greek and hide English
+            document.querySelectorAll(".english").forEach(function(el) {
+                el.classList.add("hidden");
+            });
+            document.querySelectorAll(".greek").forEach(function(el) {
+                el.classList.remove("hidden");
+            });
+        });
+
+        document.getElementById("english").addEventListener("click", function() {
+            // Show English and hide Greek
+            document.querySelectorAll(".greek").forEach(function(el) {
+                el.classList.add("hidden");
+            });
+            document.querySelectorAll(".english").forEach(function(el) {
+                el.classList.remove("hidden");
+            });
+        });
+    </script>
+
+</body>
+</html>

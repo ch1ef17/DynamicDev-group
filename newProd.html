@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Development | Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Add your custom styles for the icons and language switching */
+        .language {
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+        }
+        
+        .lang-icon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            margin-left: 10px;
+            border-radius: 50%;  /* Rounds the corners to create a circle */
+        }
+
+        /* Optional: Style the language flags */
+        .lang-icon:hover {
+            opacity: 0.8;
+        }
+
+        /* Optionally, hide all content except the selected language */
+        .hidden {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .language {
+                position: absolute;
+                right: 60px;
+                top: 105px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <h1>Dynamic Development</h1>
+                <h1>Group</h1>
+            </a>
+            <div class="call-label">
+                <p class="english">Call Us : +30 698 691 4480</p>
+                <p class="greek hidden">Καλέστε μας : +30 698 691 4480</p>
+            </div>
+        </div>
+
+        <!-- Language Selector Section -->
+        <div class="language">
+            <img src="gr.png" alt="Greek Language" class="lang-icon" id="greek">
+            <img src="eng.png" alt="English Language" class="lang-icon" id="english">
+        </div>
+
+        <!-- Navbar Section -->
+        <div class="navbar-container">
+            <nav>
+                <ul id="NavItems">
+                    <li><a href="index.html" class="english">Home</a><a href="index.html" class="greek hidden">Αρχική</a></li>
+                    <li><a href="newProd.html" class="english">New Products</a><a href="newProd.html" class="greek hidden">Νέα Προϊόντα</a></li>
+                    <li><a href="about.html" class="english">About us</a><a href="about.html" class="greek hidden">Σχετικά με εμάς</a></li>
+                    <li><a href="contact.html" class="english">Contacts</a><a href="contact.html" class="greek hidden">Επικοινωνία</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main Content -->
+        
+        <div class="categories">
+            <!-- Refrigerant Gases Category -->
+            <a href="Gases.html" class="category-item">
+                <div class="category-content">
+                    <img src="noname.jpg" alt="Refrigerant Gases">
+                    <p class="english">Refrigerant Gases</p>
+                    <p class="greek hidden">Υγρά Φρέον</p>
+                </div>
+            </a>
+        
+            <!-- Solar Panels and Systems Category -->
+            <a href="Panels.html" class="category-item">
+                <div class="category-content">
+                    <img src="3rdPrd.jpg" alt="Solar Panels and Systems">
+                    <p class="english">Solar Panles - AC Systems</p>
+                    <p class="greek hidden">Ηλιακά Πάνελς - Συστήματα Κλιματισμού</p>
+                </div>
+            </a>
+        </div>
+
+        
+    </div>
+
+    <!-- Footer Section -->
+    <div class="top-footer">
+        <div class="top-footer-text">
+            <div class="footer-section pages">
+                <h3 class="english">Pages</h3>
+                <h3 class="greek hidden">Σελίδες</h3>
+                <ul>
+                    <li><a href="#home" class="english">Home</a><a href="#home" class="greek hidden">Αρχική</a></li>
+                    <li><a href="#about" class="english">About</a><a href="#about" class="greek hidden">Σχετικά</a></li>
+                    <li><a href="#services" class="english">Services</a><a href="#services" class="greek hidden">Υπηρεσίες</a></li>
+                    <li><a href="#contact" class="english">Contact</a><a href="#contact" class="greek hidden">Επικοινωνία</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contacts">
+                <h3 class="english">Contacts</h3>
+                <h3 class="greek hidden">Επαφές</h3>
+                <ul>
+                    <li class="english">Phone: +30 698 691 4480</li>
+                    <li class="greek hidden">Τηλέφωνο: +30 698 691 4480</li>
+                    <li class="english">Location: Kato Archanes , Greece</li>
+                    <li class="greek hidden">Τοποθεσία: Κάτω Αρχάνες, Ελλάδα</li>
+                    <li class="english">Postal Code: 70100</li>
+                    <li class="greek hidden">Τ.Κ: 70100</li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-links">
+                <h3 class="english">Social Links</h3>
+                <h3 class="greek hidden">Κοινωνικά Δίκτυα</h3>
+                <ul>
+                    <li class="english"><a href="dynamicdevg@gmail.com">Email: dynamicdevg@gmail.com</a></li>
+                    <li class="greek hidden"><a href="dynamicdevg@gmail.com">Ηλεκτρονικό Ταχυδρομείο: dynamicdevg@gmail.com</a></li>
+                    
+                    <li class="english"><a href="https://www.facebook.com/profile.php?id=61571619327231">Facebook</a></li>
+                    <li class="greek hidden"><a href="https://www.facebook.com/profile.php?id=61571619327231">Facebook</a></li>
+            
+                    <li class="english"><a href="index.html" target="_blank">Official Website</a></li>
+                    <li class="greek hidden"><a href="index.html" target="_blank">Επίσημος Ιστότοπος</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bottom-footer">
+        <p class="english">Chemical Trade and Supply Plc (c) 2024 - Providing Premium Chemical Products Worldwide</p>
+        <p class="greek hidden">Χημικό Εμπόριο και Προμήθεια Ανώνυμος Εταιρεία (c) 2024 - Παροχή Ποιότητας Χημικών Προϊόντων Παγκοσμίως</p>
+    </div>
+
+    <script>
+        // JavaScript to switch between English and Greek
+        document.getElementById("greek").addEventListener("click", function() {
+            // Show Greek and hide English
+            document.querySelectorAll(".english").forEach(function(el) {
+                el.classList.add("hidden");
+            });
+            document.querySelectorAll(".greek").forEach(function(el) {
+                el.classList.remove("hidden");
+            });
+        });
+
+        document.getElementById("english").addEventListener("click", function() {
+            // Show English and hide Greek
+            document.querySelectorAll(".greek").forEach(function(el) {
+                el.classList.add("hidden");
+            });
+            document.querySelectorAll(".english").forEach(function(el) {
+                el.classList.remove("hidden");
+            });
+        });
+    </script>
+
+</body>
+</html>

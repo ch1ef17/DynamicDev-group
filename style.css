@@ -1,0 +1,635 @@
+/* Reset all margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #adcae2, #ffffff);
+}
+
+/* Restricted content container */
+.container {
+    max-width: 960px; /* Restrict the width */
+    margin: 0 auto; /* Center align the content */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.logo {
+    text-align: left; /* Centers the logo horizontally */
+}
+
+.logo h1 {
+    font-size: 2em; /* Large font size for the logo text */
+    color: #0066FF; /* Dark text color for contrast */
+    margin: 0; /* Removes default margins for precise alignment */
+    line-height: 1.2; /* Reduces spacing between the two lines */
+}
+
+.logo h1:first-of-type {
+    font-size: 2em; /* Slightly larger size for the first line */
+    font-weight: bold; /* Emphasizes the first line */
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+}
+
+/* Call label styling */
+.call-label {
+    background-color: #0066FF;  /* Green background for the call label */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+
+.homeImg {
+    display: flex;
+    justify-content: center;  /* Horizontally centers the image */
+    align-items: center;      /* Vertically centers the image */
+    height: 100%;             /* Ensures the container takes up the full height of the parent */
+}
+
+.homeImg img {
+    margin-top: 10px;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;  /* Optional: Adds rounded corners to the image */
+}
+
+/* Navbar Container */
+.navbar-container {
+    margin-top: 10px;
+    text-align: center;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 10px 0;
+}
+
+/* Navigation items inside the navbar */
+#NavItems {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#NavItems li {
+    margin: 0;
+}
+
+#NavItems li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#NavItems li a:hover {
+    color: #007bff;
+}
+
+/* General Styling for the Footer */
+.footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Footer Section ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.top-footer {
+    padding: 40px 20px;
+    background-color: #909cad; /* Background color */
+    color: white;
+}
+
+.top-footer-text {
+    max-width: 960px;
+    margin: 0 auto; /* Centers the container horizontally */
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 20px; /* Adds space between the sections */
+    display: grid; /* Use grid layout for the sections */
+}
+
+
+.footer-section h3 {
+    font-size: 1.5em; /* Larger heading */
+    margin-bottom: 15px;
+    border-bottom: 2px solid black; /* Adds a black line under each title */
+    padding-bottom: 10px; /* Adds space between the title and the line */
+}
+
+.footer-section ul {
+    list-style-type: none; /* Removes default list styles */
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Bottom Footer Section */
+.bottom-footer {
+    width: 100%;
+    height: 70px;
+    background-color: black; /* Black background for bottom */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 1.2em; /* Slightly larger text */
+}
+
+main {
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    line-height: 1.6; /* Improves readability */
+    margin: 20px auto; /* Centers the content */
+    max-width: 800px; /* Limits the content width for better readability */
+    padding: 20px; /* Adds space around the content */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Softens the edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.main-text {
+    margin-bottom: 30px; /* Adds space below the text section */
+}
+
+.main-text h1 {
+    font-size: 2.5em; /* Large and bold title */
+    color: #0066FF; /* Dark text for contrast */
+    text-align: center; /* Center aligns the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.main-text p {
+    font-size: 1.1em; /* Slightly larger text for readability */
+    color: #555; /* Softer text color for body text */
+    text-align: justify; /* Aligns text evenly on both sides */
+    margin-bottom: 20px; /* Adds space below paragraphs */
+}
+
+.main-text p:last-of-type {
+    margin-bottom: 0; /* Removes extra margin after the last paragraph */
+}
+
+.show-prod {
+    display: flex;
+    flex-direction: column; /* Stacks the sections vertically */
+    gap: 30px; /* Adds space between the sections */
+    align-items: center; /* Centers the sections horizontally */
+    margin-top: 20px; /* Adds space above the gallery */
+}
+
+.latest-chemical-prod, .new-services {
+    text-align: center; /* Centers titles and images */
+    width: 100%; /* Makes each section span the full width */
+    max-width: 800px; /* Limits the width of each section */
+}
+
+.latest-chemical-prod h2, .new-services h2 {
+    font-size: 1.5em; /* Makes titles prominent */
+    color: #333; /* Dark text for contrast */
+    margin-bottom: 15px; /* Adds space below titles */
+}
+
+.product-group img {
+    width: 250px; /* Increased width for bigger images */
+    height: 250px; /* Increased height for bigger images */
+    object-fit: cover; /* Ensures images fill their container without distortion */
+    border-radius: 8px; /* Rounds image corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.product-group img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+
+.product-group img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.cont-container {
+    margin-top: 10px;
+    display: flex;  /* Enables flexbox layout */
+    justify-content: center;  /* Centers items horizontally */
+    align-items: flex-start;  /* Aligns items at the top vertically */
+    background-color: #ffffff;  /* Optional: Sets a background color for the container */
+    padding: 20px;  /* Optional: Adds padding around the container */
+    border-radius: 12px;  /* Rounds the corners of the border */
+}
+
+.contact-info, .form {
+    display: inline-block;  /* Makes both blocks align horizontally */
+    vertical-align: top;  /* Ensures they align at the top */
+    background-color: #f0f0f0;  /* Light grey background inside the box */
+    padding: 20px;  /* Adds padding around the content inside */
+    border-radius: 12px;  /* Rounds the corners of the border */
+    margin: 10px;  /* Adds space between the elements */
+
+}
+
+.contact-info {
+    width: 30%;  /* Adjust the width to make the contact info smaller */
+}
+
+.form {
+    width: 50%;  /* Adjust the width to give the form a bit more space */
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #007bff;
+}
+
+
+.about.text {
+    font-family: 'Arial', sans-serif; /* Sets a modern, sans-serif font for readability */
+    line-height: 1.8; /* Increases line height for better readability */
+    color: #333; /* Dark gray text color for easy reading */
+    font-size: 16px; /* Standard text size */
+    margin: 0 auto; /* Centers the content */
+    max-width: 1000px; /* Limits the width for better readability on large screens */
+    padding: 20px; /* Adds some padding around the content */
+}
+
+.about.text p {
+    margin-bottom: 20px; /* Adds spacing between paragraphs */
+    text-align: justify; /* Justifies the text for a neat, aligned look */
+    text-justify: inter-word; /* Ensures better word spacing when justifying */
+}
+
+.show-case {
+    display: flex;  /* Aligns the items horizontally */
+    flex-direction: column;  /* Stacks the products vertically */
+    gap: 30px;  /* Adds space between the products */
+    padding: 20px;
+    justify-content: center;  /* Centers the content */
+    align-items: center;  /* Centers the products horizontally */
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;  /* Stack the text vertically */
+    text-align: left;
+}
+
+.product1 {
+    flex-direction: row;  /* Product 1: Image left, Text right */
+}
+
+.product2 {
+    flex-direction: row-reverse;  /* Product 2: Image right, Text left */
+}
+
+.product1 {
+    display: flex;
+    justify-content: flex-start;  /* Align Product 1 image to the left */
+    align-items: center;
+    gap: 20px;
+}
+
+.product2 {
+    display: flex;
+    justify-content: flex-end;  /* Align Product 2 image to the right */
+    align-items: center;
+    gap: 20px;
+}
+
+.product1 img, .product2 img {
+    width: 350px;  /* Adjust the image size */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;  /* Optional: Adds rounded corners to the images */
+}
+
+
+.product1 img, .product2 img {
+    width: 350px;  /* Adjust the image size */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;  /* Optional: Adds rounded corners to the images */
+}
+
+
+.product-text {
+    font-family: 'Arial', sans-serif;  /* Set font */
+    line-height: 1.6;  /* Adjust line height */
+    color: #555;  /* Sets text color */
+}
+
+.product-text.description {
+    margin-bottom: 20px;  /* Adds more space after the description text */
+}
+
+.product-details {
+    text-align: left;  /* Aligns the details text to the left */
+}
+
+.product-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;  /* Adds space between the weight and dimensions text */
+}
+
+.otherPrd {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #555;
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 20px;
+}
+
+.otherPrdImg {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Optional: Adds spacing between images */
+    margin-bottom: 20px;
+}
+
+.otherPrdImg img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.GenImg img{
+    max-width: 830px;
+    height: auto;
+    border-radius: 10px;
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto; /* Centers the block-level image */
+}
+
+/* General container styling */
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+/* Category item styling */
+.category-item {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s; /* Smooth hover effect for the entire item */
+}
+
+.category-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image styling */
+.category-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px; /* Rounds only the corners */
+    border: 2px solid #ddd;
+    transition: box-shadow 0.3s, transform 0.3s; /* Smooth shadow and scale effects */
+}
+
+.category-item img:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Adds shadow on hover */
+    transform: scale(1.1); /* Slight zoom for the image */
+}
+
+/* Text styling */
+.category-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #444;
+}
+
+/* General styling for the products */
+.product3, .product4, .product5, .product6, .product7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: #fff; /* Optional: Adds a white background to each product */
+    border-radius: 10px; /* Rounds the corners of the product containers */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around each product */
+    transition: transform 0.3s ease-in-out; /* Adds smooth transition on hover */
+}
+
+/* Image styling */
+.product3 img, .product4 img, .product5 img, .product6 img, .product7 img {
+    width: 350px;  /* Adjust the image size */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;  /* Adds rounded corners to the images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Text container styling */
+.text2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Product text styling */
+.product-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 10px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Panel container styling */
+.panels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: adds background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    margin: 20px;
+}
+
+/* Panel container styling */
+.panels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: adds background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    margin: 20px;
+}
+
+/* Panel images container */
+.panelImg {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Space between the two divs */
+    margin-bottom: 20px; /* Space between the images and text below */
+    width: 100%;
+    max-width: 900px; /* Optional: limits width to prevent overflowing */
+}
+
+/* Individual image and text containers */
+.battery, .remote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 45%; /* Optional: ensures both divs share the space evenly */
+}
+
+/* Image styling */
+.battery img, .remote img {
+    width: 150px;  /* Adjust the image size */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners to the images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect on images */
+.battery img:hover, .remote img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Adds shadow on hover */
+}
+
+/* Text styling */
+.product-text2 {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    text-decoration: underline; /* Underlines the titles */
+}
+
+/* Main paragraph text styling */
+.panels p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px; /* Optional: adjusts width for readability */
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    #NavItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #NavItems li {
+        margin: 10px 0;
+    }
+
+    .top-footer-text {
+        gap: 10px; /* Adds space between the sections */
+    }
+
+    .homeImg img{
+        width: 300px;
+    }
+
+    .product1 {
+        flex-direction: column;
+        justify-content: center;  /* Align Product 1 image to the left */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product2 {
+        flex-direction: column;
+        justify-content: center;  /* Align Product 1 image to the left */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-info, .form {
+        display: block; /* Stack elements vertically */
+        width: 80%; /* Adjust width for better appearance */
+        margin: 20px auto; /* Center elements horizontally */
+    }
+
+    .cont-container {
+        display: block; /* Stack elements vertically */
+    }
+
+    /* Stack the images one under the other */
+    .otherPrdImg {
+        flex-direction: column; /* Stacks images vertically */
+        align-items: center; /* Centers images vertically */
+    }
+
+    /* Set the width of .GenImg images to 350px for smaller screens */
+    .GenImg img {
+        max-width: 250px;
+    }
+
+    .logo {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .call-label {
+        width: 130px;
+    }
+}

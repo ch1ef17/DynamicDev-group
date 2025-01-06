@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Development | Refrigerant Gases</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Add your custom styles for the icons and language switching */
+        .language {
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+        }
+        
+        .lang-icon {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            margin-left: 10px;
+            border-radius: 50%;  /* Rounds the corners to create a circle */
+        }
+
+        /* Optional: Style the language flags */
+        .lang-icon:hover {
+            opacity: 0.8;
+        }
+
+        /* Optionally, hide all content except the selected language */
+        .hidden {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .language {
+                position: absolute;
+                right: 60px;
+                top: 105px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <h1>Dynamic Development</h1>
+                <h1>Group</h1>
+            </a>
+            <div class="call-label">
+                <p class="english">Call Us : +30 698 691 4480</p>
+                <p class="greek hidden">Καλέστε μας : +30 698 691 4480</p>
+            </div>
+        </div>
+
+        <!-- Language Selector Section -->
+        <div class="language">
+            <img src="gr.png" alt="Greek Language" class="lang-icon" id="greek">
+            <img src="eng.png" alt="English Language" class="lang-icon" id="english">
+        </div>
+
+        <!-- Navbar Section -->
+        <div class="navbar-container">
+            <nav>
+                <ul id="NavItems">
+                    <li><a href="index.html" class="english">Home</a><a href="index.html" class="greek hidden">Αρχική</a></li>
+                    <li><a href="newProd.html" class="english">New Products</a><a href="newProd.html" class="greek hidden">Νέα Προϊόντα</a></li>
+                    <li><a href="about.html" class="english">About us</a><a href="about.html" class="greek hidden">Σχετικά με εμάς</a></li>
+                    <li><a href="contact.html" class="english">Contacts</a><a href="contact.html" class="greek hidden">Επικοινωνία</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!-- Main Content -->
+        
+        <div class="show-case">
+            <div class="product1">
+                <img src="newPrd1.jpg" alt="Product 1">
+                <div class="product-text">
+                    <p class="english">12 kg R134a gas cylinder is ideal for use in residential and commercial refrigeration and automotive systems, 
+                    offering similar energy efficiency to older HCFC. We understand the importance of having reliable products that comply 
+                    with current regulations, so you can count on our R134a gas cylinder to provide optimal performance and maximum safety.</p>
+                    
+                    <p class="greek hidden">Ο κυλίνδρος αερίου R134a 12 κιλών είναι ιδανικός για χρήση σε οικιακά και επαγγελματικά ψυγεία, 
+                        καθώς και σε αυτοκινητιστικά συστήματα, προσφέροντας παρόμοια ενεργειακή αποδοτικότητα με τα παλαιότερα HCFC. Κατανοούμε 
+                        τη σημασία της αξιοπιστίας των προϊόντων που συμμορφώνονται με τις τρέχουσες κανονιστικές απαιτήσεις, γι' αυτό μπορείτε να 
+                        υπολογίζετε στον κυλίνδρου αερίου R134a για να παρέχει βέλτιστη απόδοση και μέγιστη ασφάλεια.</p>  
+                </div>
+            </div>
+
+            <div class="product2">
+                <img src="newPrdGen.jpg" alt="Product 2">
+                <div class="text2">
+                    <div class="product-text">
+                        <p class="">Refrigerant gas R134a in refillable cylinder approved T-PED / EN 13322-1 12 kg Valve 1/4″ SAE UN 3159</p>
+                        <p class="">Αέριο ψυκτικό R134a σε επαναγγελλόμενο κύλινδρο εγκεκριμένο σύμφωνα με το πρότυπο T-PED / EN 13322-1, 
+                            12 κιλών, με βαλβίδα 1/4″ SAE UN 3159.</p>
+                    </div>
+
+                    <div class="product-details">
+                        <p class="english">Weight: 19 kg</p>
+                        <p class="english">Dimensions: 25 × 25 × 50 cm</p>
+
+                        <p class="greek hidden">Βάρος: 19 kg</p>
+                        <p class="greek hidden">Διαστάσεις: 25 × 25 × 50 cm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text2">
+                <p class="english">~We also offer a wide variety of refrigerant gases such as: R125, R32, R1234, R442, R448, R452, R422, R407, R410, R134, R507, R404.</p>
+                <p class="greek hidden">Προσφέρουμε επίσης μια ευρεία γκάμα αερίων ψυκτικών, όπως: R125, R32, R1234, R442, R448, R452, R422, R407, R410, R134, R507, R404.</p>
+            </div>
+
+            <div class="product3">
+                <img src="407.jpg" alt="Product 3">
+                <div class="text2">
+                    <div class="product-text">
+                        <p class="english">Refrigerant Gas R-407 is a hydrofluorocarbon (HFC) blend commonly used in air conditioning and refrigeration systems. 
+                            It is designed as a replacement for R-22 and consists of three components: R-32, R-125, and R-134a. R-407 offers improved energy efficiency, 
+                            lower ozone depletion potential (ODP = 0), and moderate global warming potential (GWP). It is widely used in commercial and residential refrigeration 
+                            applications and operates under similar pressures as R-22, making it a suitable retrofit option.</p>
+
+                        <p class="greek hidden">Το αέριο ψυκτικό R-407 είναι ένα μείγμα υδροφθοροανθράκων (HFC) που χρησιμοποιείται συνήθως σε συστήματα κλιματισμού και ψύξης.
+                             Έχει σχεδιαστεί ως αντικατάσταση του R-22 και αποτελείται από τρία συστατικά: R-32, R-125 και R-134a. 
+                             Το R-407 προσφέρει βελτιωμένη ενεργειακή αποδοτικότητα, χαμηλότερο δυναμικό εξάντλησης του όζοντος (ODP = 0) και μέτριο δυναμικό υπερθέρμανσης 
+                             του πλανήτη (GWP). Χρησιμοποιείται ευρέως σε επαγγελματικές και οικιακές εφαρμογές ψύξης και λειτουργεί υπό παρόμοιες πιέσεις με το R-22, 
+                             καθιστώντας το κατάλληλη επιλογή για αναβάθμιση συστημάτων.</p>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="product4">
+                <img src="32.jpg" alt="Product 4">
+                <div class="text2">
+                    <div class="product-text">
+                    <p class="english">Refrigerant Gas R-32 (Difluoromethane) is a hydrofluorocarbon (HFC) refrigerant widely used in air conditioning and refrigeration systems. 
+                        It has a lower Global Warming Potential (GWP = 675) compared to traditional refrigerants like R-410A, making it more environmentally friendly. 
+                        R-32 is efficient, offering high energy performance and requiring less refrigerant charge compared to alternatives. While it is mildly flammable 
+                        (classified as A2L), proper handling and equipment design mitigate safety concerns. Its applications include residential, commercial air conditioning, 
+                        and heat pumps. R-32 is becoming increasingly popular as part of the shift toward sustainable cooling solutions.</p>
+
+                    <p class="greek hidden">Το αέριο ψυκτικό R-32 (Διφθορομεθάνιο) είναι ένας υδροφθοροάνθρακας (HFC) που χρησιμοποιείται ευρέως σε συστήματα κλιματισμού και ψύξης.
+                         Έχει χαμηλότερο δυναμικό υπερθέρμανσης του πλανήτη (GWP = 675) σε σύγκριση με παραδοσιακά ψυκτικά αέρια, όπως το R-410A, 
+                         καθιστώντας το πιο φιλικό προς το περιβάλλον. Το R-32 είναι αποδοτικό, προσφέροντας υψηλή ενεργειακή απόδοση και απαιτώντας λιγότερο ψυκτικό 
+                         υγρό σε σχέση με εναλλακτικές επιλογές. Παρόλο που είναι ελαφρώς εύφλεκτο (κατηγοριοποιείται ως A2L), η σωστή διαχείριση και ο σχεδιασμός του 
+                         εξοπλισμού περιορίζουν τους κινδύνους για την ασφάλεια. Οι εφαρμογές του περιλαμβάνουν οικιακό και εμπορικό κλιματισμό, καθώς και αντλίες θερμότητας. 
+                         Το R-32 γίνεται όλο και πιο δημοφιλές ως μέρος της μετάβασης σε βιώσιμες λύσεις ψύξης.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product5">
+                <img src="448.jpg" alt="Product 5">
+                <div class="text2">
+                    <div class="product-text">
+                        <p class="english">Refrigerant Gas R-448A is a non-ozone-depleting hydrofluorocarbon (HFC) and hydrofluoroolefin (HFO) blend, 
+                            specifically designed as a lower-GWP replacement for R-404A and R-507 in refrigeration systems. It consists of a mixture of R-32, 
+                            -125, R-134a, R-1234yf, and R-1234ze. R-448A has a significantly reduced Global Warming Potential (GWP = ~1387) compared to R-404A, 
+                            making it a more environmentally friendly option.
+                            It offers good energy efficiency and performance across a wide range of medium- and low-temperature refrigeration applications, including 
+                            upermarkets, cold storage, and transport refrigeration. It is non-flammable (safety classification A1) and operates at similar pressures to R-404A, 
+                            making retrofitting straightforward.</p>
+
+                        <p class="greek hidden">Το αέριο ψυκτικό R-448A είναι ένα μείγμα υδροφθοροανθράκων (HFC) και υδροφθοροολεφινών (HFO) 
+                            που δεν εξαντλεί το όζον, και έχει σχεδιαστεί ειδικά ως αντικατάσταση με χαμηλότερο GWP για τα R-404A και R-507 σε συστήματα ψύξης. 
+                            Αποτελείται από ένα μείγμα R-32, R-125, R-134a, R-1234yf και R-1234ze. Το R-448A έχει σημαντικά μειωμένο δυναμικό υπερθέρμανσης του πλανήτη 
+                            (GWP = ~1387) σε σύγκριση με το R-404A, καθιστώντας το μια πιο φιλική προς το περιβάλλον επιλογή.
+                            Προσφέρει καλή ενεργειακή αποδοτικότητα και απόδοση σε ένα ευρύ φάσμα εφαρμογών ψύξης μεσαίας και χαμηλής θερμοκρασίας, 
+                            όπως σε σούπερ μάρκετ, ψυχόμενα αποθηκευτικά κέντρα και ψύξη μεταφορών. Είναι μη εύφλεκτο (κατηγοριοποίηση ασφάλειας A1) και λειτουργεί 
+                            σε παρόμοιες πιέσεις με το R-404A, διευκολύνοντας την αναβάθμιση συστημάτων.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product6">
+                <img src="452.jpg" alt="Product 6">
+                <div class="text2">
+                    <div class="product-text">
+                        <p class="english">Refrigerant Gas R-452A is a non-ozone-depleting hydrofluorocarbon (HFC) and hydrofluoroolefin (HFO) blend designed as a lower-GWP replacement 
+                            for R-404A and R-507A in refrigeration systems. It consists of R-32, R-125, and R-1234yf. R-452A has a Global Warming Potential (GWP) of approximately 
+                            2140, which is significantly lower than R-404A.
+                            R-452A provides similar cooling capacity, energy efficiency, and system pressures to R-404A, making it a drop-in replacement in many systems. 
+                            t is widely used in transport refrigeration, such as refrigerated trucks and containers, as well as commercial refrigeration. With its non-flammable 
+                            classification (A1), it offers safe handling and reliable performance.</p>
+
+                        <p class="greek hidden">Το αέριο ψυκτικό R-452A είναι ένα μείγμα υδροφθοροανθράκων (HFC) και υδροφθοροολεφινών (HFO) που δεν εξαντλεί το όζον και έχει 
+                            σχεδιαστεί ως αντικατάσταση με χαμηλότερο GWP για τα R-404A και R-507A σε συστήματα ψύξης. Αποτελείται από R-32, R-125 και R-1234yf. 
+                            Το R-452A έχει δυναμικό υπερθέρμανσης του πλανήτη (GWP) περίπου 2140, το οποίο είναι σημαντικά χαμηλότερο από το R-404A.
+                            Το R-452A προσφέρει παρόμοια ικανότητα ψύξης, ενεργειακή αποδοτικότητα και πιέσεις συστήματος με το R-404A, καθιστώντας το μια άμεση αντικατάσταση 
+                            σε πολλά συστήματα. Χρησιμοποιείται ευρέως στην ψύξη μεταφορών, όπως σε ψυγμένα φορτηγά και κοντέινερ, καθώς και σε εμπορικά συστήματα ψύξης. 
+                            Με την κατηγοριοποίηση του ως μη εύφλεκτο (A1), προσφέρει ασφαλή διαχείριση και αξιόπιστη απόδοση.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product7">
+                <img src="507.jpg" alt="Product 7">
+                <div class="text2">
+                    <div class="product-text">
+                    <p class="english">Refrigerant Gas R-507 is a non-ozone-depleting hydrofluorocarbon (HFC) blend primarily composed of R-125 (50%) and R-143a (50%). 
+                        It is commonly used in refrigeration systems, particularly in commercial and industrial applications such as food storage, transport refrigeration,
+                         and air conditioning.    
+                        R-507 has a similar performance to R-22 and R-502, with a low discharge temperature and high efficiency. It operates at the same pressures as R-22, 
+                        making it suitable for retrofitting systems designed for R-22. However, R-507 has a higher Global Warming Potential (GWP) (~3985), which has led to a push 
+                        for more environmentally friendly alternatives. R-507 is non-flammable (A1 classification), ensuring safe use under normal operating conditions.</p>
+
+                    <p class="greek hidden">Το αέριο ψυκτικό R-507 είναι ένα μείγμα υδροφθοροανθράκων (HFC) που δεν εξαντλεί το όζον, και αποτελείται κυρίως από R-125 (50%) 
+                        και R-143a (50%). Χρησιμοποιείται συνήθως σε συστήματα ψύξης, ιδιαίτερα σε εμπορικές και βιομηχανικές εφαρμογές, όπως αποθήκευση τροφίμων, ψύξη μεταφορών 
+                        και κλιματισμό.
+                        Το R-507 προσφέρει παρόμοια απόδοση με το R-22 και το R-502, με χαμηλή θερμοκρασία εκφόρτισης και υψηλή απόδοση. Λειτουργεί σε παρόμοιες πιέσεις με το 
+                        R-22, καθιστώντας το κατάλληλο για αναβάθμιση συστημάτων που σχεδιάστηκαν για R-22. Ωστόσο, το R-507 έχει υψηλότερο δυναμικό υπερθέρμανσης του πλανήτη (GWP) 
+                        (~3985), γεγονός που έχει οδηγήσει σε πίεση για πιο φιλικές προς το περιβάλλον εναλλακτικές λύσεις. Το R-507 είναι μη εύφλεκτο (κατηγοριοποίηση A1), διασφαλίζοντας την 
+                        ασφαλή χρήση του υπό κανονικές συνθήκες λειτουργίας.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+            
+    </div>
+
+    <!-- Footer Section -->
+    <div class="top-footer">
+        <div class="top-footer-text">
+            <div class="footer-section pages">
+                <h3 class="english">Pages</h3>
+                <h3 class="greek hidden">Σελίδες</h3>
+                <ul>
+                    <li><a href="#home" class="english">Home</a><a href="#home" class="greek hidden">Αρχική</a></li>
+                    <li><a href="#about" class="english">About</a><a href="#about" class="greek hidden">Σχετικά</a></li>
+                    <li><a href="#services" class="english">Services</a><a href="#services" class="greek hidden">Υπηρεσίες</a></li>
+                    <li><a href="#contact" class="english">Contact</a><a href="#contact" class="greek hidden">Επικοινωνία</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contacts">
+                <h3 class="english">Contacts</h3>
+                <h3 class="greek hidden">Επαφές</h3>
+                <ul>
+                    <li class="english">Phone: +30 698 691 4480</li>
+                    <li class="greek hidden">Τηλέφωνο: +30 698 691 4480</li>
+                    <li class="english">Location: Kato Archanes , Greece</li>
+                    <li class="greek hidden">Τοποθεσία: Κάτω Αρχάνες, Ελλάδα</li>
+                    <li class="english">Postal Code: 70100</li>
+                    <li class="greek hidden">Τ.Κ: 70100</li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-links">
+                <h3 class="english">Social Links</h3>
+                <h3 class="greek hidden">Κοινωνικά Δίκτυα</h3>
+                <ul>
+                    <li class="english"><a href="dynamicdevg@gmail.com">Email: dynamicdevg@gmail.com</a></li>
+                    <li class="greek hidden"><a href="dynamicdevg@gmail.com">Ηλεκτρονικό Ταχυδρομείο: dynamicdevg@gmail.com</a></li>
+                    
+                    <li class="english"><a href="https://www.facebook.com/profile.php?id=61571619327231">Facebook</a></li>
+                    <li class="greek hidden"><a href="https://www.facebook.com/profile.php?id=61571619327231">Facebook</a></li>
+            
+                    <li class="english"><a href="index.html" target="_blank">Official Website</a></li>
+                    <li class="greek hidden"><a href="index.html" target="_blank">Επίσημος Ιστότοπος</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bottom-footer">
+        <p class="english">Chemical Trade and Supply Plc (c) 2024 - Providing Premium Chemical Products Worldwide</p>
+        <p class="greek hidden">Χημικό Εμπόριο και Προμήθεια Ανώνυμος Εταιρεία (c) 2024 - Παροχή Ποιότητας Χημικών Προϊόντων Παγκοσμίως</p>
+    </div>
+
+    <script>
+        // JavaScript to switch between English and Greek
+        document.getElementById("greek").addEventListener("click", function() {
+            // Show Greek and hide English
+            document.querySelectorAll(".english").forEach(function(el) {
+                el.classList.add("hidden");
+            });
+            document.querySelectorAll(".greek").forEach(function(el) {
+                el.classList.remove("hidden");
+            });
+        });
+
+        document.getElementById("english").addEventListener("click", function() {
+            // Show English and hide Greek
+            document.querySelectorAll(".greek").forEach(function(el) {
+                el.classList.add("hidden");
+            });
+            document.querySelectorAll(".english").forEach(function(el) {
+                el.classList.remove("hidden");
+            });
+        });
+    </script>
+
+</body>
+</html>
